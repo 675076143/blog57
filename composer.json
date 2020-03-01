@@ -10,10 +10,13 @@
     "require": {
         "php": "^7.2",
         "dflydev/apache-mime-types": "^1.0",
+        "doctrine/dbal": "^2.10",
         "fideloper/proxy": "^4.0",
         "laravel/framework": "^6.2",
         "laravel/helpers": "^1.1",
-        "laravel/tinker": "^2.0"
+        "laravel/tinker": "^2.0",
+        "michelf/php-markdown": "^1.9",
+        "michelf/php-smartypants": "^1.8"
     },
     "require-dev": {
         "facade/ignition": "^1.4",

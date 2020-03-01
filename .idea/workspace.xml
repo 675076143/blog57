@@ -2,25 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff1f9e13-1c9e-48c0-88a9-a8c67f252729" name="Default Changelist" comment="1-5">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/PostController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/TagController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/UploadController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/TagCreateRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/TagUpdateRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/UploadFileRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/UploadNewFolderRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Post.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Tag.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/UploadsManager.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/blog.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/PostFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_01_081004_create_posts_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_01_100919_create_tags_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_01_100928_create_post_tag_pivot.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/PostsTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/PostCreateRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/PostUpdateRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/Markdowner.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_01_110958_restructure_posts_table.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/fonts/vendor/_@fortawesome_fontawesome-free@5.12.1@@fortawesome/fontawesome-free/webfa-brands-400.eot" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/fonts/vendor/_@fortawesome_fontawesome-free@5.12.1@@fortawesome/fontawesome-free/webfa-brands-400.svg" afterDir="false" />
@@ -39,31 +24,21 @@
       <change afterPath="$PROJECT_DIR$/public/fonts/vendor/_@fortawesome_fontawesome-free@5.12.1@@fortawesome/fontawesome-free/webfa-solid-900.woff2" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/auth/login.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/layout.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/partials/errors.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/partials/navbar.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/partials/success.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/post/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/tag/_form.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/tag/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/tag/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/tag/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/upload/_modals.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/upload/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/blog/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/blog/post.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/post/_form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/post/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/post/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/blog57.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blog57.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Tag.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/post/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/post/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -175,6 +150,11 @@
       <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
       <path value="$PROJECT_DIR$/vendor/laravel/helpers" />
       <path value="$PROJECT_DIR$/vendor/dflydev/apache-mime-types" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/michelf/php-markdown" />
+      <path value="$PROJECT_DIR$/vendor/michelf/php-smartypants" />
     </include_path>
   </component>
   <component name="ProjectId" id="1YW6cpdvV8wh4X953s7ZXFmxg9Q" />
@@ -215,8 +195,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583046084260</updated>
-      <workItem from="1583046087053" duration="10556000" />
+      <workItem from="1583046087053" duration="11981000" />
     </task>
+    <task id="LOCAL-00001" summary="1-5">
+      <created>1583059690238</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583059690238</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,10 +216,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="1-5" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="113" y="114" key="CommitChangelistDialog2" timestamp="1583059648347">
+    <state x="113" y="114" key="CommitChangelistDialog2" timestamp="1583059685580">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="113" y="114" key="CommitChangelistDialog2/0.0.2560.1040/2560.0.1366.728@0.0.2560.1040" timestamp="1583059648347" />
+    <state x="113" y="114" key="CommitChangelistDialog2/0.0.2560.1040/2560.0.1366.728@0.0.2560.1040" timestamp="1583059685580" />
     <state x="0" y="86" key="DiffContextDialog" timestamp="1583059572421">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
@@ -240,5 +228,13 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="463" y="442" key="NewPhpFileDialog/0.0.2560.1040/2560.0.1366.728@0.0.2560.1040" timestamp="1583054000751" />
+    <state x="239" y="252" key="Vcs.Push.Dialog.v2" timestamp="1583059694431">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="239" y="252" key="Vcs.Push.Dialog.v2/0.0.2560.1040/2560.0.1366.728@0.0.2560.1040" timestamp="1583059694431" />
+    <state x="310" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1583061625815">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="310" y="229" width="672" height="678" key="search.everywhere.popup/0.0.2560.1040/2560.0.1366.728@0.0.2560.1040" timestamp="1583061625815" />
   </component>
 </project>

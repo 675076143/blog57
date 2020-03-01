@@ -11,7 +11,7 @@ try {
 
     require('bootstrap');
     require('datatables.net-bs4');
-    // require('selectize');
+    require('selectize');
 } catch (e) {}
 window.axios = require('axios');
 
