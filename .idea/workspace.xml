@@ -1,7 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff1f9e13-1c9e-48c0-88a9-a8c67f252729" name="Default Changelist" comment="" />
+    <list default="true" id="ff1f9e13-1c9e-48c0-88a9-a8c67f252729" name="Default Changelist" comment="1-5">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/PostController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/TagController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/UploadController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/TagCreateRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/TagUpdateRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/UploadFileRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/UploadNewFolderRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Post.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Tag.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/UploadsManager.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/helpers.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/blog.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/PostFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_01_081004_create_posts_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_01_100919_create_tags_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_01_100928_create_post_tag_pivot.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/PostsTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/_@fortawesome_fontawesome-free@5.12.1@@fortawesome/fontawesome-free/webfa-brands-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/_@fortawesome_fontawesome-free@5.12.1@@fortawesome/fontawesome-free/webfa-brands-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/_@fortawesome_fontawesome-free@5.12.1@@fortawesome/fontawesome-free/webfa-brands-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/_@fortawesome_fontawesome-free@5.12.1@@fortawesome/fontawesome-free/webfa-brands-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/_@fortawesome_fontawesome-free@5.12.1@@fortawesome/fontawesome-free/webfa-brands-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/_@fortawesome_fontawesome-free@5.12.1@@fortawesome/fontawesome-free/webfa-regular-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/_@fortawesome_fontawesome-free@5.12.1@@fortawesome/fontawesome-free/webfa-regular-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/_@fortawesome_fontawesome-free@5.12.1@@fortawesome/fontawesome-free/webfa-regular-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/_@fortawesome_fontawesome-free@5.12.1@@fortawesome/fontawesome-free/webfa-regular-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/_@fortawesome_fontawesome-free@5.12.1@@fortawesome/fontawesome-free/webfa-regular-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/_@fortawesome_fontawesome-free@5.12.1@@fortawesome/fontawesome-free/webfa-solid-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/_@fortawesome_fontawesome-free@5.12.1@@fortawesome/fontawesome-free/webfa-solid-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/_@fortawesome_fontawesome-free@5.12.1@@fortawesome/fontawesome-free/webfa-solid-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/_@fortawesome_fontawesome-free@5.12.1@@fortawesome/fontawesome-free/webfa-solid-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/_@fortawesome_fontawesome-free@5.12.1@@fortawesome/fontawesome-free/webfa-solid-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/auth/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/layout.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/partials/errors.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/partials/navbar.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/partials/success.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/post/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/tag/_form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/tag/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/tag/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/tag/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/upload/_modals.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/upload/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/blog/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/blog/post.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/blog57.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blog57.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +76,14 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="675076143 &lt;36965465+675076143@users.noreply.github.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -101,19 +173,31 @@
       <path value="$PROJECT_DIR$/vendor/phar-io/version" />
       <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
       <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/laravel/helpers" />
+      <path value="$PROJECT_DIR$/vendor/dflydev/apache-mime-types" />
     </include_path>
   </component>
   <component name="ProjectId" id="1YW6cpdvV8wh4X953s7ZXFmxg9Q" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Documents\GitHub\blog57\resources\views\blog" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -131,11 +215,30 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583046084260</updated>
-      <workItem from="1583046087053" duration="2055000" />
+      <workItem from="1583046087053" duration="10556000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="1-5" />
+    <option name="LAST_COMMIT_MESSAGE" value="1-5" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="113" y="114" key="CommitChangelistDialog2" timestamp="1583059648347">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="113" y="114" key="CommitChangelistDialog2/0.0.2560.1040/2560.0.1366.728@0.0.2560.1040" timestamp="1583059648347" />
+    <state x="0" y="86" key="DiffContextDialog" timestamp="1583059572421">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="0" y="86" key="DiffContextDialog/0.0.2560.1040/2560.0.1366.728@0.0.2560.1040" timestamp="1583059572421" />
+    <state x="463" y="442" key="NewPhpFileDialog" timestamp="1583054000751">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="463" y="442" key="NewPhpFileDialog/0.0.2560.1040/2560.0.1366.728@0.0.2560.1040" timestamp="1583054000751" />
   </component>
 </project>
