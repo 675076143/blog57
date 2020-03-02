@@ -1,4 +1,4 @@
-<html>
+html>
 <head>
     <title>{{ config('blog.title') }}</title>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">

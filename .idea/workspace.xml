@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff1f9e13-1c9e-48c0-88a9-a8c67f252729" name="Default Changelist" comment="1-5">
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/PostCreateRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/PostUpdateRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Markdowner.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_01_110958_restructure_posts_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/PostService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/TagFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/TagsTableSeeder.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/fonts/vendor/_@fortawesome_fontawesome-free@5.12.1@@fortawesome/fontawesome-free/webfa-brands-400.eot" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/fonts/vendor/_@fortawesome_fontawesome-free@5.12.1@@fortawesome/fontawesome-free/webfa-brands-400.svg" afterDir="false" />
@@ -24,29 +24,31 @@
       <change afterPath="$PROJECT_DIR$/public/fonts/vendor/_@fortawesome_fontawesome-free@5.12.1@@fortawesome/fontawesome-free/webfa-solid-900.woff2" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/post/_form.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/post/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/post/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/blog57.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blog57.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/blog/layouts/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/blog/layouts/master.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/blog/layouts/post.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/blog/partials/page-footer.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/blog/partials/page-nav.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Post.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Tag.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/blog.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/PostFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/PostFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/PostsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/PostsTableSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/post/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/post/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/blog/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
@@ -173,10 +175,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Documents\GitHub\blog57\resources\views\blog" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Github\blog57" />
     </key>
   </component>
   <component name="RunManager">
@@ -196,6 +202,17 @@
       <option name="presentableId" value="Default" />
       <updated>1583046084260</updated>
       <workItem from="1583046087053" duration="11981000" />
+      <workItem from="1583115937683" duration="54000" />
+      <workItem from="1583116062470" duration="1188000" />
+      <workItem from="1583117610324" duration="182000" />
+      <workItem from="1583117802912" duration="2695000" />
+      <workItem from="1583124382398" duration="626000" />
+      <workItem from="1583125071224" duration="915000" />
+      <workItem from="1583126388298" duration="797000" />
+      <workItem from="1583127285584" duration="561000" />
+      <workItem from="1583127986706" duration="1132000" />
+      <workItem from="1583129130073" duration="507000" />
+      <workItem from="1583129649281" duration="1470000" />
     </task>
     <task id="LOCAL-00001" summary="1-5">
       <created>1583059690238</created>
@@ -216,22 +233,56 @@
     <option name="LAST_COMMIT_MESSAGE" value="1-5" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="113" y="114" key="CommitChangelistDialog2" timestamp="1583059685580">
-      <screen x="0" y="0" width="2560" height="1040" />
+    <state x="239" y="310" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583130493023">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="239" y="310" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1583130493023" />
+    <state x="217" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583129893480">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="217" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583129893480" />
+    <state x="85" y="55" key="CommitChangelistDialog2" timestamp="1583131243044">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="85" y="55" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1583131243044" />
     <state x="113" y="114" key="CommitChangelistDialog2/0.0.2560.1040/2560.0.1366.728@0.0.2560.1040" timestamp="1583059685580" />
     <state x="0" y="86" key="DiffContextDialog" timestamp="1583059572421">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="0" y="86" key="DiffContextDialog/0.0.2560.1040/2560.0.1366.728@0.0.2560.1040" timestamp="1583059572421" />
-    <state x="463" y="442" key="NewPhpFileDialog" timestamp="1583054000751">
-      <screen x="0" y="0" width="2560" height="1040" />
+    <state width="1340" height="266" key="GridCell.Tab.0.bottom" timestamp="1583115185279">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1340" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583115185279" />
+    <state width="1340" height="266" key="GridCell.Tab.0.center" timestamp="1583115185278">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="266" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583115185278" />
+    <state width="1340" height="266" key="GridCell.Tab.0.left" timestamp="1583115185278">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="266" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583115185278" />
+    <state width="1340" height="266" key="GridCell.Tab.0.right" timestamp="1583115185279">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583115185279" />
+    <state x="347" y="442" key="NewPhpFileDialog" timestamp="1583130217746">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="347" y="442" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583130217746" />
     <state x="463" y="442" key="NewPhpFileDialog/0.0.2560.1040/2560.0.1366.728@0.0.2560.1040" timestamp="1583054000751" />
+    <state x="577" y="149" key="SettingsEditor" timestamp="1583125263415">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="577" y="149" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583125263415" />
     <state x="239" y="252" key="Vcs.Push.Dialog.v2" timestamp="1583059694431">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="239" y="252" key="Vcs.Push.Dialog.v2/0.0.2560.1040/2560.0.1366.728@0.0.2560.1040" timestamp="1583059694431" />
+    <state x="645" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1583129651779">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="645" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583129651779" />
     <state x="310" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1583061625815">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
