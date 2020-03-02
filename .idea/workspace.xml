@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff1f9e13-1c9e-48c0-88a9-a8c67f252729" name="Default Changelist" comment="1-5">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/PostService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/TagFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/TagsTableSeeder.php" afterDir="false" />
+    <list default="true" id="ff1f9e13-1c9e-48c0-88a9-a8c67f252729" name="Default Changelist" comment="7. 给博客套上 Claen Blog 主题 &amp; 完善博客前台功能">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ContactController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/ContactMeRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Mail/ContactMail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Mail/TestMail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_02_065621_create_jobs_table.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/fonts/vendor/_@fortawesome_fontawesome-free@5.12.1@@fortawesome/fontawesome-free/webfa-brands-400.eot" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/fonts/vendor/_@fortawesome_fontawesome-free@5.12.1@@fortawesome/fontawesome-free/webfa-brands-400.svg" afterDir="false" />
@@ -24,24 +25,16 @@
       <change afterPath="$PROJECT_DIR$/public/fonts/vendor/_@fortawesome_fontawesome-free@5.12.1@@fortawesome/fontawesome-free/webfa-solid-900.woff2" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/blog/layouts/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/blog/layouts/master.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/blog/layouts/post.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/blog/partials/page-footer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/blog/partials/page-nav.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/blog/contact.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/emails/contact.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/emails/test.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Tag.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/blog.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/PostFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/PostFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/PostsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/PostsTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/blog/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/mail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/blog/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/blog/partials/page-nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/partials/page-nav.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/blog/post.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +205,7 @@
       <workItem from="1583127285584" duration="561000" />
       <workItem from="1583127986706" duration="1132000" />
       <workItem from="1583129130073" duration="507000" />
-      <workItem from="1583129649281" duration="1470000" />
+      <workItem from="1583129649281" duration="2653000" />
     </task>
     <task id="LOCAL-00001" summary="1-5">
       <created>1583059690238</created>
@@ -221,16 +214,35 @@
       <option name="project" value="LOCAL" />
       <updated>1583059690238</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="7. 给博客套上 Claen Blog 主题 &amp; 完善博客前台功能">
+      <created>1583131265576</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1583131265577</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="1-5" />
-    <option name="LAST_COMMIT_MESSAGE" value="1-5" />
+    <MESSAGE value="7. 给博客套上 Claen Blog 主题 &amp; 完善博客前台功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="7. 给博客套上 Claen Blog 主题 &amp; 完善博客前台功能" />
   </component>
   <component name="WindowStateProjectService">
     <state x="239" y="310" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583130493023">
@@ -241,10 +253,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="217" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583129893480" />
-    <state x="85" y="55" key="CommitChangelistDialog2" timestamp="1583131243044">
+    <state x="85" y="55" key="CommitChangelistDialog2" timestamp="1583131264226">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="85" y="55" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1583131243044" />
+    <state x="85" y="55" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1583131264226" />
     <state x="113" y="114" key="CommitChangelistDialog2/0.0.2560.1040/2560.0.1366.728@0.0.2560.1040" timestamp="1583059685580" />
     <state x="0" y="86" key="DiffContextDialog" timestamp="1583059572421">
       <screen x="0" y="0" width="2560" height="1040" />
@@ -275,9 +287,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="577" y="149" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583125263415" />
-    <state x="239" y="252" key="Vcs.Push.Dialog.v2" timestamp="1583059694431">
-      <screen x="0" y="0" width="2560" height="1040" />
+    <state x="179" y="252" key="Vcs.Push.Dialog.v2" timestamp="1583131271997">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="179" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1583131271997" />
     <state x="239" y="252" key="Vcs.Push.Dialog.v2/0.0.2560.1040/2560.0.1366.728@0.0.2560.1040" timestamp="1583059694431" />
     <state x="645" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1583129651779">
       <screen x="0" y="0" width="1920" height="1040" />
